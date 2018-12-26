@@ -1,0 +1,227 @@
+/*
+	style inspiration taken from:;
+	https://www.canva.com/learn/website-color-schemes/
+	https://httpster.net/website/fieldwork-2014/
+*/
+body {
+	font-family: 'Mali', cursive;
+}
+
+.jumbotron {
+	margin-top: 30px;
+	padding: 100px;
+
+	background-color: #02c8a7;
+	color: white;
+	text-align: center;
+
+	border: 2px #01b7a6 solid;
+	border-radius: 10px;
+
+	-webkit-box-shadow: 9px -9px 11px -6px rgba(0,143,149,1);
+	-moz-box-shadow: 9px -9px 11px -6px rgba(0,143,149,1);
+	box-shadow: 9px -9px 11px -6px rgba(0,143,149,1);
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.jumbotron h1 {
+ 	font-size: 5em;
+ 	font-weight: 700;
+}
+
+.jumbotron input{
+	font-size: 25px;
+	font-weight: bold;
+	color: #f53240;
+
+}
+
+
+.arrow-left {
+	width: 20px;
+	padding: 20px;
+	background: black;
+}
+
+.arrow-right {
+	width: 20px;
+	padding: 20px;
+	background: black;
+}
+
+.question .well {
+	background-color: #008f95;
+	padding: 30px;
+	color: white;
+	border: 2px solid #02c8a7;
+
+	-webkit-box-shadow: 9px -9px 11px -6px rgba(2,200,167,1);
+	-moz-box-shadow: 9px -9px 11px -6px rgba(2,200,167,1);
+	box-shadow: 9px -9px 11px -6px rgba(2,200,167,1);
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.question .well h2{
+	margin-top: 0px;
+	margin-bottom: 30px;
+	font-weight: bold;
+	font-size: 3em;
+}
+
+.question .well img{
+	border: 2px red solid;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.play {
+	padding: 15px;
+	width: 350px;
+	margin-left: 13px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+
+	background: white;
+	color: #f53240;
+
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 2em;
+	border: 2px #f53240 solid;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.finishButtonRow{
+	text-align: center;
+}
+
+.nextButtonRow{
+	text-align: center;
+}
+
+#finish {
+	margin-top: 15px;
+	margin-bottom: 30px;
+	font-size: 2em;
+	font-weight: bold;
+	background-color: white;
+	color: #e9b000;
+	border: 2px solid #e9b000;
+	padding: 15px;
+	width: 350px;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+
+}
+
+#next {
+	margin-top: 15px;
+	margin-bottom: 30px;
+	font-size: 2em;
+	font-weight: bold;
+	background-color: white;
+	color: #02c8a7;
+	border: 2px solid #02c8a7;
+	padding: 15px;
+	width: 350px;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+#next:hover {
+ 	background-color: #02c8a7;
+ 	color: white;
+ 	border: 2px solid white;
+
+}
+
+
+#finish:hover {
+ 	background-color: #e9b000;
+ 	color: white;
+ 	border: 2px solid white;
+
+}
+
+
+@media(max-width: 1179px){
+	.play {
+		width: 63.5%;
+
+	}
+}
+
+@media(max-width: 1000px){
+	.question .well {
+		padding: 30px 30px 15px 30px;
+		margin-top: 30px;
+	}
+
+	.question .well h2{
+		margin-top: 0px;
+		margin-bottom: 0px;
+		text-align: center;
+	}
+
+	.play {
+		width: 96%;
+		margin-top: 30px;
+		margin-bottom: 0px;
+	}
+
+	.question .well img{
+		margin-top: 30px;
+	}
+
+	#finish {
+		width: 500px;
+		margin-bottom: 20px;
+		margin-top: 20px;
+	}
+
+	#next {
+		width: 500px;
+		margin-bottom: 20px;
+		margin-top: 20px;
+	}
+
+}
+
+.play:hover {
+	background: #f53240;
+	color: white;
+	border: 2px solid white;
+}
+
+
+.input-hidden { /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+
+.check
+{
+    opacity:0.5;
+	background: #008f95;
+}
+
+.results {
+	font-size: 2em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

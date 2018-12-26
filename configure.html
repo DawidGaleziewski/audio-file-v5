@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Landing page mockup</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700&amp;subset=latin-ext" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
+</head>
+<body>
+
+	<div id = "head">
+		<h1>
+			Audio
+			<span id= file>
+				file
+			</span>
+		</h1>
+	</div>
+
+	<div id ="body">
+			
+		</span>
+		<div class ="description">
+			<h2><span>Configure app</span></h2>
+			<p>Adjust your devices volume so you can hear the sound.</p>
+			<button id="play-button">
+			<i class="fas fa-play"></i>
+				Play
+			</button>	
+		</div>
+
+
+		<div id = "configure-question-number" class="description">
+			<h2><span>Select the length of the test</span></h2>
+			<p>Select how many questions will be asked.</p>
+			<form>
+				<label class="question-number-box">
+					1 <input type="radio" name="question-number" class = "input-hidden" value = "1">
+				</label>				
+
+				<label class="question-number-box">
+					2 <input type="radio" name="question-number" class = "input-hidden" value = "2">
+				</label>
+
+				<label class="question-number-box">
+					3 <input type="radio" name="question-number" class = "input-hidden"
+					value = "3">
+				</label>
+				<div></div>
+				
+			</form>
+			
+
+		</div>
+
+			<a href="question.html">
+				<button id="next-button">
+					<i class="fas fa-fast-forward"></i>
+					Next
+				</button>
+			</a>
+
+		
+	</div>
+
+
+
+	<div id = "footer">
+
+		
+	</div>
+
+<script type="text/javascript">
+		let audioSample = new Audio("media/6_tamburyno_stukanie1_4389ms.wav");
+		let playButton = document.getElementById("play-button");
+
+		playButton.addEventListener("click", function(){
+			audioSample.play();
+		});
+
+		// Highlight clicked answer - Apply function to each square in container
+		let labels = document.querySelectorAll("label")
+
+		function toggleColor(){
+			for(let i = 0; i < labels.length; i++ ){
+				labels[i].classList.remove("label-check");
+				labels[i].addEventListener("click", function(){
+					removeToggledColor(labels);
+					this.classList.add("label-check");
+				})
+			}
+		}
+
+		
+
+		function removeToggledColor(answerImage){
+			for(let e = 0; e < labels.length; e++){
+				labels[e].classList.remove("label-check");
+			}
+		}
+
+		toggleColor();
+		labels[0].classList.add("label-check")
+
+
+		
+
+
+		function checkSelectedValue(){
+			let selectedValue =document.querySelector(".label-check").querySelector("input").value;
+			return selectedValue
+		}
+
+		let nextButton = document.getElementById("next-button");
+
+		nextButton.addEventListener("click", function(){
+			let SelectedValue = checkSelectedValue()
+			localStorage.setItem("rememberCheckedValueLocalStorage", SelectedValue);
+			console.log(checkSelectedValue())
+		})
+
+		// Number(localStorage.getItem("rememberCheckedValueLocalStorage"));
+
+
+
+		
+</script>
+
+</body>
+</html>
