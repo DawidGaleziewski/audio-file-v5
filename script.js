@@ -132,17 +132,34 @@ function stopCurrentSound(){
 // }
 
 // Update hidden table with results of the test
-function updateTable(){
-	// get tables dom
-	let table = document.querySelector(".results");
-	// must startt from second on loop as first is header
-	let rows = table.querySelectorAll("tr");
-	for(let i = 1; i < rows.length; i++){
-		let tableData = rows[i].querySelectorAll("td");
-		tableData[1].innerText = rolledAudioVisualObjects[i - 1]["correct"];
-		tableData[2].innerText = rolledAudioVisualObjects[i - 1]["winnerObject"]["description"];
+// function updateTable(){
+// 	// get tables dom
+// 	let table = document.querySelector(".results");
+// 	// must startt from second on loop as first is header
+// 	let rows = table.querySelectorAll("tr");
+// 	for(let i = 1; i < rows.length; i++){
+// 		let tableData = rows[i].querySelectorAll("td");
+// 		tableData[1].innerText = rolledAudioVisualObjects[i - 1]["correct"];
+// 		tableData[2].innerText = rolledAudioVisualObjects[i - 1]["winnerObject"]["description"];
+// 	}
+// }
+
+
+
+function updateTableData(){
+	let tableRows = document.querySelectorAll(".results tr");
+	for(let i = 0; i < rolledAudioVisualObjects.length; i ++){
+		tableRows[i + 1].querySelectorAll("td")[0].innerText = i + 1;
+		tableRows[i + 1].querySelectorAll("td")[1].innerText = rolledAudioVisualObjects[i]["correct"];
+		let replayButton = tableRows[i + 1].querySelector("button");
+		replayButton.addEventListener("click", function(){
+			rolledAudioVisualObjects[i].rolledMedia.filter( obj => {return obj.winner === "true"})[0]["audio"].play()
+		})
 	}
+
+
 }
+
 
 // variable needed for below function
 var nextButton = document.querySelector("#next-button")
@@ -157,7 +174,8 @@ nextButton.addEventListener("click", function(){
 	// interpolate the variable
 
 	if(currentQuestion +1 >= numberOfQuestions){
-		document.querySelector("a").href = "results.html"
+		document.querySelector(".results").classList.remove("input-hidden")
+		updateTableData();
 	} else{
 		currentQuestion++;
 		// add new media

@@ -54,18 +54,48 @@
 				</form>
 			</div>
 
-			<a href="#">
 				<button id="next-button">
 					<i class="fas fa-fast-forward"></i>
 					Next
 				</button>
-			</a>
+
 		</div>
 		
 	</div>
 
 
+		<div class="question results input-hidden">
+			<div class ="description">
+				<h2><span>Check results</span></h2>
+				<p>See which sounds caused you issues</p>
+		
+	
+			</div>
 
+
+			<div id = "pictures-div">
+
+			<table>
+				<tr>
+					<th>Question</th>
+					<th>Correct</th>
+					<th>Replay sound</th>
+				</tr>
+
+				<tr>
+					<td>1</td>
+					<td>True</td>
+					<td><button class="play-button">PLAY</button></td>
+				</tr>				
+
+				
+			</table>
+
+			</div>
+		</div>
+
+
+<!-- 
 	<div id = "footer">
 
 		<div id = "current-question">
@@ -77,9 +107,52 @@
 		</div>
 		
 	</div>
-
+ -->
 
 <script type="text/javascript" src = "script.js"></script>
+
+<script type="text/javascript">
+	let table = document.querySelector("table")
+	let tableRowsArray = [];
+	let buttonBluePrint = table.querySelector("button");
+
+	// test
+	// addTableRows(10)
+	// let testRow = table.querySelectorAll("td");
+	// let clone = buttonBluePrint.cloneNode(true);
+	// testRow[5].appendChild(clone)
+	
+
+	function addTableRows(numberOfCopies){
+		for(let i = 0; i < numberOfCopies; i++){
+			addSingleRow(i);
+		}
+	}
+
+	function addSingleRow(x){
+		x = x + 2;
+		table.insertRow(x);
+		let row = table.querySelectorAll("tr")[x];
+		row.insertCell(0);
+		row.insertCell(1);
+		row.insertCell(2);
+		let playRow = row.querySelectorAll("td")[2];
+		let clone = buttonBluePrint.cloneNode(true);
+		playRow.appendChild(clone)
+	}
+
+	addTableRows(Number(localStorage.getItem("rememberCheckedValueLocalStorage")) -1);
+
+
+
+	
+
+
+
+
+	
+</script>
+
 
 
 </body>
