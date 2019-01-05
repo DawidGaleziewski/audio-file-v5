@@ -174,8 +174,13 @@ nextButton.addEventListener("click", function(){
 	// interpolate the variable
 
 	if(currentQuestion +1 >= numberOfQuestions){
+		// hide questions
+		document.querySelector(".question:first-of-type").classList.add("input-hidden")
+
+		// show results table
 		document.querySelector(".results").classList.remove("input-hidden")
 		updateTableData();
+
 	} else{
 		currentQuestion++;
 		// add new media
