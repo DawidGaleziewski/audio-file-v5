@@ -3,7 +3,7 @@ var numberOfQuestions = Number(localStorage.getItem("rememberCheckedValueLocalSt
 
 // Each question is placed in a container in DOM foe easier manipulation
 // !after change this will use only one div that will change
-let questionDiv = document.querySelector(".question");
+let questionDiv = document.querySelector(".main__test");
 // Keep track of rolled questions their media, and DOM objects they are assigned to
 	// Important! It keep the audio in variables so we can access it on click
 let rolledAudioVisualObjects = [];
@@ -147,7 +147,7 @@ function stopCurrentSound(){
 
 
 function updateTableData(){
-	let tableRows = document.querySelectorAll(".results tr");
+	let tableRows = document.querySelectorAll("#main__test__results__table tr");
 	for(let i = 0; i < rolledAudioVisualObjects.length; i ++){
 		tableRows[i + 1].querySelectorAll("td")[0].innerText = i + 1;
 		tableRows[i + 1].querySelectorAll("td")[1].innerText = rolledAudioVisualObjects[i]["correct"];
@@ -162,7 +162,7 @@ function updateTableData(){
 
 
 // variable needed for below function
-var nextButton = document.querySelector("#next-button")
+var nextButton = document.querySelector("#button__next")
 
 // this will now needed to use more often, after each next button
 nextButton.addEventListener("click", function(){
@@ -175,10 +175,10 @@ nextButton.addEventListener("click", function(){
 
 	if(currentQuestion +1 >= numberOfQuestions){
 		// hide questions
-		document.querySelector(".question:first-of-type").classList.add("input-hidden")
+		document.querySelector(".main__test").classList.add("input-hidden")
 
 		// show results table
-		document.querySelector(".results").classList.remove("input-hidden")
+		document.querySelector("#main__test__results").classList.remove("input-hidden")
 		updateTableData();
 
 	} else{
@@ -257,7 +257,7 @@ function addMedia(rolledAudioVisualObject){
 	rolledAudioVisualObject["box3"].src =  rolledAudioVisualObject["rolledMedia"][2]["visual"];
 
 	// Adding sound to play button
-	let playButton = questionDiv.querySelector("#play-button");
+	let playButton = questionDiv.querySelector("#button__play");
 	
 	playButton.addEventListener("click", playCurrentSound)
 }
@@ -267,7 +267,7 @@ function playCurrentSound(){
 };
 
 // for testing
-var playButton = questionDiv.querySelector("#play-button");
+var playButton = questionDiv.querySelector("#button__play");
 
 // Combine rolled objects with DOM objects for easy applying letter
  function updateAudioVisualMediaInformation(questionDiv) {

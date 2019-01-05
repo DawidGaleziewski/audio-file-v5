@@ -10,60 +10,57 @@
 </head>
 <body>
 
-	<div id = "head">
+	<div id = "nav__logo">
 		<h1>
-			Audio
-			<span id= file>
-				file
+			<span id= "nav__logo--primary-color">
+				Audio
+			</span>
+			<span id= "nav__logo--secondary-color">
+				File
 			</span>
 		</h1>
 	</div>
 
-	<div id ="body">
 			
-		</span>
-		<div class ="description">
-			<h2><span>Configure app</span></h2>
+		<div class ="main__test__description">
+			<h2><span class="main__test__description--underline">Configure app</span></h2>
 			<p>Adjust your devices volume so you can hear the sound.</p>
-			<button id="play-button">
+			<button id="button__play">
 			<i class="fas fa-play"></i>
 				Play
 			</button>	
 		</div>
 
 
-		<div id = "configure-question-number" class="description">
-			<h2><span>Select the length of the test</span></h2>
+		<div id = "main__config-questions" class="main__test__description">
+			<h2><span class="main__test__description--underline">Select the length of the test</span></h2>
 			<p>Select how many questions will be asked.</p>
 			<form>
-				<label class="question-number-box">
+				<label class="main__config-questions__number-box">
 					1 <input type="radio" name="question-number" class = "input-hidden" value = "1">
 				</label>				
 
-				<label class="question-number-box">
+				<label class="main__config-questions__number-box">
 					2 <input type="radio" name="question-number" class = "input-hidden" value = "2">
 				</label>
 
-				<label class="question-number-box">
+				<label class="main__config-questions__number-box">
 					3 <input type="radio" name="question-number" class = "input-hidden"
 					value = "3">
-				</label>
-				<div></div>
-				
+				</label>			
 			</form>
 			
 
 		</div>
 
 			<a href="question.html">
-				<button id="next-button">
+				<button id="button__next">
 					<i class="fas fa-fast-forward"></i>
 					Next
 				</button>
 			</a>
 
-		
-	</div>
+
 
 
 
@@ -74,7 +71,7 @@
 
 <script type="text/javascript">
 		let audioSample = new Audio("media/6_tamburyno_stukanie1_4389ms.wav");
-		let playButton = document.getElementById("play-button");
+		let playButton = document.getElementById("button__play");
 
 		playButton.addEventListener("click", function(){
 			audioSample.play();
@@ -113,7 +110,7 @@
 			return selectedValue
 		}
 
-		let nextButton = document.getElementById("next-button");
+		let nextButton = document.getElementById("button__next");
 
 		nextButton.addEventListener("click", function(){
 			let SelectedValue = checkSelectedValue()
