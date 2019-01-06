@@ -96,6 +96,10 @@ a{
  }
 
 /*CONFIGURATION STAGE*/
+#main__config-questions {
+	padding-bottom: 200px;
+}
+
 .main__config-questions__number-box {
 	display: inline-block;
 	background-color: #007dcfff;
