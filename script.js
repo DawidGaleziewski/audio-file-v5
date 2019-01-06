@@ -173,6 +173,11 @@ nextButton.addEventListener("click", function(){
 	removeToggledColor();
 	// interpolate the variable
 
+	// scrolls to logo
+	var logoElement = document.getElementById("nav__logo");
+
+	logoElement.scrollIntoView();
+	
 	if(currentQuestion +1 >= numberOfQuestions){
 		// hide questions
 		document.querySelector(".main__test").classList.add("input-hidden")
