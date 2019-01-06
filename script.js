@@ -177,10 +177,13 @@ nextButton.addEventListener("click", function(){
 	var logoElement = document.getElementById("nav__logo");
 
 	logoElement.scrollIntoView();
-	
+
 	if(currentQuestion +1 >= numberOfQuestions){
 		// hide questions
 		document.querySelector(".main__test").classList.add("input-hidden")
+
+		// hide button__next
+		nextButton.classList.add("input-hidden")
 
 		// show results table
 		document.querySelector("#main__test__results").classList.remove("input-hidden")

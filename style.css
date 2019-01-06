@@ -3,43 +3,55 @@ Mobile testing on
 1080 x 1920 pixel
 */
 
-/**{
- box-sizing: border-box;
-}
-*/
 body {
 	margin: 0;
+	padding: 0;
 	font-family: 'Lato', sans-serif;
 	background: #FAFAFA;
 	min-height: 100%;
 	padding-bottom: 0px;
+	position:relative
 }
 
 a{
 	text-decoration: none;
 }
 
+/*NAVIGATION*/
+
 #nav__logo {
 	background: white;
+	padding: 20px 0;
+	border-bottom: 1px solid #E1E1E1;
 	margin: 0px;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	border-bottom: 1px solid #E1E1E1
 
 }
 
 #nav__logo h1 {
-	color: #007dcfff;
-	margin: 0px;
-	text-align: center;
-	font-size: 5em;
+	font-size: 6em;
+	text-transform: uppercase;
 	font-weight: bold;
 	letter-spacing: 5px;
-	text-transform: uppercase;
+	text-align: center;
+	margin: 0px;
+}
+
+#nav__logo--primary-color{
+	color: #007dcfff;
 }
 
 #nav__logo--secondary-color {
 	color: #d7dc1ffb;
+}
+
+/*MAIN CONTENT*/
+
+#main-page__start-section {
+	background-image: url("./headphones.jpeg");
+	background-size: 100% 100%;
+	text-align: center;
+	height: 1080px;
+	border-top: 1px solid #E1E1E1;
 }
 
 .main__test__description {
@@ -58,25 +70,12 @@ a{
 	border: none;
 }
 
-.main__test__description h2 {
+.main__test__description--underline {
+	border-bottom: 5px solid #d7dc1ffb;
 	font-style: italic;
 }
 
-.main__test__description--underline {
-	border-bottom: 5px solid #d7dc1ffb;
-}
 
-
-
-
-
-#main-page__start-section {
-	background-image: url("./headphones.jpeg");
-	background-size: 100% 100%;
-	text-align: center;
-	border-top: 1px solid #E1E1E1;
-	height: 1000px;
-}
 
 #button__start {
 	color: white;
@@ -88,15 +87,35 @@ a{
 	border-radius: 5px;
 	text-transform: uppercase;
 	cursor: pointer;
-	
 }
+
  #button__start:hover{
  	background: white;
  	color: #b2226aff;
  	border: 2px solid #b2226aff;
  }
 
+/*CONFIGURATION STAGE*/
+.main__config-questions__number-box {
+	display: inline-block;
+	background-color: #007dcfff;
+	color: white;
+	margin-right: 10px;
 
+	text-align: center;
+	padding: 17px 0;
+	border-radius: 5px;
+	border: 2px #007dcfff solid;
+
+	font-size: 2em;
+	width: 2em;
+}
+
+.main__config-questions__number-box:hover {
+	cursor: pointer;
+}
+
+/* TESTTIN STAGE*/
 #main__test__answers {
 	width: 100%;
 	margin-left: 40px;
@@ -137,7 +156,6 @@ a{
 #button__next {
 	margin-left: auto;
 	margin-right: auto;
-	margin-top: 3em;
 	color: white;
 	font-size: 4em;
 	background: #b2226aff;
@@ -155,53 +173,7 @@ a{
 	color: #b2226aff;
 }
 
-#current-question{
- 	display: block;
- 	margin-left: auto;
-	margin-right: auto;
- 	margin-top: 40px;
- 	width: 100px;
-}
-
-
-
-.main__config-questions__number-box {
-	display: inline-block;
-	background-color: #007dcfff;
-	color: white;
-	margin-right: 10px;
-
-	text-align: center;
-	padding: 17px 0;
-	border-radius: 5px;
-	border: 2px #007dcfff solid;
-
-	font-size: 2em;
-	width: 2em;
-
-}
-
-.main__config-questions__number-box:hover {
-	cursor: pointer;
-}
-
-.input-hidden { /* HIDE RADIO */
-  visibility: hidden; /* Makes input not-clickable */
-  position: absolute; /* Remove input from document flow */
-}
-
-.check{
-	opacity: 0.5;
-}
-
-.label-check{
-background-color: white;
- color: #007dcfff;
- border: 2px #007dcfff solid;
-}
-
-/*Table*/
-
+/*RESULTS STAGE - Table*/
 #main__test__results{
 
  margin-left: 40px;
@@ -248,10 +220,35 @@ background-color: white;
 	cursor: pointer;
 }
 
-
-
 #main__test__results__table button:hover {
 	color: #007dcfff;
 	background: white;
 	border: 2px solid #007dcfff;
+}
+
+/*Bottom navigation*/
+
+#nav__bottom {
+	padding: 20px 0px;
+	width: 100%;
+	background: black;
+	position: fixed;
+	bottom: 0;
+}
+
+
+/*USED BY JS*/
+.input-hidden { /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+
+.check{
+	opacity: 0.5;
+}
+
+.label-check{
+background-color: white;
+ color: #007dcfff;
+ border: 2px #007dcfff solid;
 }
