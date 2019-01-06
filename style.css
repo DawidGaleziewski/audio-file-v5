@@ -238,10 +238,9 @@ a{
 	bottom: 0;
 }
 
-#nav__bottom--sticky {
+.nav__bottom--sticky {
 	position: fixed;
 	background: black;
-	
 }
 
 
