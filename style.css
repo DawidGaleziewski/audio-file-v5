@@ -235,9 +235,13 @@ a{
 #nav__bottom {
 	padding: 20px 0px;
 	width: 100%;
-	background: black;
-	position: fixed;
 	bottom: 0;
+}
+
+#nav__bottom--sticky {
+	position: fixed;
+	background: black;
+	
 }
 
 
