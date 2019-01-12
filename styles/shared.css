@@ -1,0 +1,149 @@
+/*
+Mobile testing on
+1080 x 1920 pixel
+*/
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Lato', sans-serif;
+	background: #FAFAFA;
+	min-height: 100%;
+	padding-bottom: 0px;
+	position: relative;
+}
+
+a{
+	text-decoration: none;
+}
+
+h2 {
+	margin: 0px;
+}
+
+/*remove outline on all buttons*/
+button:focus {
+	outline: none;
+}
+
+/*NAVIGATION*/
+
+#nav__logo {
+	background: white;
+	padding: 20px 0;
+	border-bottom: 1px solid #E1E1E1;
+	margin: 0px;
+
+}
+
+#nav__logo h1 {
+	font-size: 6em;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 5px;
+	text-align: center;
+	margin: 0px;
+}
+
+#nav__logo--primary-color{
+	color: #007dcfff;
+}
+
+#nav__logo--secondary-color {
+	color: #d7dc1ffb;
+}
+
+.main__test__description {
+	background: #FAFAFA;
+	padding-bottom: 2em;
+	font-size: 20px;
+	border-bottom: 1px solid #E1E1E1;
+	margin: 2em 0 0 2em;
+
+	font-size: 3em;
+	letter-spacing: 2px;
+	line-height: 2em;
+}
+
+.main__test__description--underline {
+	border-bottom: 5px solid #d7dc1ffb;
+	font-style: italic;
+	display: inline-block;
+	margin-bottom: 16px;
+}
+
+.main__test__description > p {
+ margin: 0px;
+}
+
+#button__play {
+	color: white;
+	font-size: 1.5em;
+	background: #007dcfff;
+	border: none;
+	padding: 0.5em;
+	border-radius: 10px;
+	text-transform: uppercase;
+	border: 2px solid white;
+	cursor: pointer;
+	margin-top: 32px;
+}
+
+
+#button__play:hover {
+	color: #007dcfff;
+	background: white;
+	border: 2px solid #007dcfff;
+}
+
+#button__next {
+	display: block;
+	width: 4em;
+	margin-top: 2em;
+	margin-left: auto;
+	margin-right: auto;
+	color: white;
+	font-size: 4em;
+	background: #b2226aff;
+	padding: 0.5em;
+	border-radius: 10px;
+	text-transform: uppercase;
+	border: 2px solid white;
+	cursor: pointer;
+	z-index: 1;
+	
+}
+
+#button__next:hover {
+	background-color: white;
+	border: 2px solid #b2226aff;
+	color: #b2226aff;
+}
+
+
+/*Bottom navigation*/
+
+#nav__bottom {
+	padding: 20px 0px;
+	width: 100%;
+	
+}
+
+.nav__bottom--sticky {
+	position: fixed;
+	background: black;
+	bottom: 0;
+	left: 0;
+}
+
+
+/*USED BY JS*/
+.input-hidden { /* HIDE RADIO */
+  visibility: hidden; /* Makes input not-clickable */
+  position: absolute; /* Remove input from document flow */
+}
+
+.check{
+	opacity: 0.5;
+}
+

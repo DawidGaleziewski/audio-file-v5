@@ -1,0 +1,38 @@
+/*MAIN CONTENT*/
+
+#body__landing-page .main__test__description {
+	border: none;
+}
+
+#main__start-section {
+	background-size: 100% 100%;
+	text-align: center;
+	height: 1080px;
+	border-top: 1px solid #E1E1E1;
+	background-image: url("../media/headphones.jpeg");
+	position: relative;
+}
+
+
+
+#button__start {
+	color: white;
+	font-size: 5em;
+	position: absolute;
+	top: 5em;
+	left: 40%;
+
+	background: #b2226aff;
+	border: none;
+	padding: 0.5em;
+	border-radius: 5px;
+	text-transform: uppercase;
+	cursor: pointer;
+	display: inline-block;
+}
+
+ #button__start:hover{
+ 	background: white;
+ 	color: #b2226aff;
+ 	border: 2px solid #b2226aff;
+ }

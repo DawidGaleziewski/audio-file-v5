@@ -1,13 +1,18 @@
 <!DOCTYPE html>
-<html>
+<!-- added lang -->
+<html lang="en">
 <head>
+	<!-- added charset -->
+	<meta charset="UTF-8">
 	<title>Landing page mockup</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
 	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700&amp;subset=latin-ext" rel="stylesheet">
-</head>
-<body>
+	<link rel="stylesheet" type="text/css" href="./styles/shared.css">
+	<link rel="stylesheet" type="text/css" href="./styles/main.css">
 
-	<div id = "nav__logo">
+</head>
+<body id = "body__landing-page">
+
+	<nav id = "nav__logo">
 		<h1>
 			<span id= "nav__logo--primary-color">
 				Audio
@@ -16,26 +21,22 @@
 				File
 			</span>
 		</h1>
-	</div>
+	</nav>
 
-	<div class ="main__test__description main__test__description--no-border">
+	<section class ="main__test__description">
 		<h2><span class="main__test__description--underline">Test your hearing</span></h2>
 		<p>This app was designed to help,
 		specialists in the field, <br>
 		determine potential hearing loses.</p>	
-	</div>
+	</section>
 
-	<div id = "main-page__start-section">
-		<a href=".\configure.html">
-			<button id="button__start">Start</button>
+	<!-- Use forward slash for url -->
+	<!-- button should not be in 'a' tag -->
+	<section id = "main__start-section">
+		<a href="./configure/configure.html">
+			<span id="button__start">Start</span>
 		</a>
-	</div>
+	</section>
 		
-
-
-<!-- 	<div id = "footer">
-		
-	</div> -->
-
 </body>
 </html>

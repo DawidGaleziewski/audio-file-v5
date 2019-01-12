@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset="UTF-8">
+	<title>Landing page mockup</title>
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,400i,700&amp;subset=latin-ext" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="../styles/shared.css">
+	<link rel="stylesheet" type="text/css" href="../styles/question_test.css">
+	<link rel="stylesheet" type="text/css" href="../styles/question_result.css">
+
+
+</head>
+
+<body>
+
+	<nav id = "nav__logo">
+		<h1>
+			<span id= "nav__logo--primary-color">
+				Audio
+			</span>
+			<span id= "nav__logo--secondary-color">
+				File
+			</span>
+		</h1>
+	</nav>
+		
+	<div class = "main__test">
+
+		<div class = "main__test__description">
+			<h2><span class="main__test__description--underline">Question 1</span></h2>
+			<p>Which picture is the source of sound?</p>
+
+			<button id = "button__play">
+					<i class="fas fa-play"></i>
+					Play
+			</button>	
+
+		</div>
+
+		<div id = "main__test__answers">
+			<form>
+				<label>
+					<img src="../media/error.jpg" alt="question image" class= "main__test__answer__img">
+					<input type="radio" name="question" class="input-hidden">
+				</label>					
+
+				<label>
+					<img src="../media/error.jpg"  alt="question image" class= "main__test__answer__img">
+					<input type="radio" name="question" class="input-hidden">
+				</label>					
+				<label>
+					<img src="../media/error.jpg"  alt="question image" class= "main__test__answer__img">
+					<input type="radio" name="question" class="input-hidden">
+				</label>						
+			</form>
+		</div>
+
+	</div>
+
+	<div id="main__test__results" class="input-hidden">
+		<div class ="main__test__description">
+			<h2>
+				<span class="main__test__description--underline">Check results</span>
+			</h2>
+			<p>See which sounds caused you issues</p>
+		</div>
+
+		<table id="main__test__results__table">
+			<tr>
+				<th>Question</th>
+				<th>Correct</th>
+				<th>Replay sound</th>
+			</tr>
+			<tr>
+				<td>1</td>
+				<td>True</td>
+				<td><button class="button__play">PLAY</button></td>
+			</tr>				
+		</table>
+	</div>
+
+
+
+	<nav id = "nav__bottom" class="nav__bottom--sticky">
+		<div>
+			<span id="button__next">
+			<i class="fas fa-fast-forward"></i> Next
+			</span>
+		</div>
+	</nav>
+
+
+<script src = "../scripts/roll_questions.js"></script>
+<script src = "../scripts/update_resul_table.js"></script>
+
+
+</body>
+</html>

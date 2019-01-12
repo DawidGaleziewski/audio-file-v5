@@ -1,0 +1,33 @@
+/* TESTING STAGE*/
+#main__test__answers {
+	width: 100%;
+	margin-left: 40px;
+	margin-top: 4em;
+}
+
+.main__test__answer__img {
+	background-size: 100% 100%;
+	width: 40%;
+	display: block;
+	border: 5px solid #007dcfff;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 1em;
+	cursor: pointer;
+}
+
+#button__next {
+	display: block;
+	margin-top: 0;
+	margin-left: auto;
+	margin-right: auto;
+	color: white;
+	font-size: 4em;
+	width: 4em;
+	background: #b2226aff;
+	padding: 0.5em;
+	border-radius: 10px;
+	text-transform: uppercase;
+	border: 2px solid white;
+	cursor: pointer;
+}
