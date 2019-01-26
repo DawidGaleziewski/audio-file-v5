@@ -7,28 +7,25 @@
 #main__start-section {
 	background-size: 100% 100%;
 	text-align: center;
-	height: 1080px;
+	height: 60vh;
+	width: 100vw;
 	border-top: 1px solid #E1E1E1;
-	background-image: url("../media/headphones.jpeg");
+	background: url("../media/headphones.jpeg") bottom/cover no-repeat;
 	position: relative;
 }
 
-
-
 #button__start {
-	color: white;
-	font-size: 5em;
 	position: absolute;
-	top: 5em;
-	left: 40%;
-
+	left: 30%;
+	top: 40%;
+	display: inline-block;
+	color: white;
+	font-size: 3rem;
+	padding: 0.5rem;
 	background: #b2226aff;
-	border: none;
-	padding: 0.5em;
 	border-radius: 5px;
 	text-transform: uppercase;
 	cursor: pointer;
-	display: inline-block;
 }
 
  #button__start:hover{

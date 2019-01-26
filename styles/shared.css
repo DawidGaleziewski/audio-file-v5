@@ -1,20 +1,20 @@
-/*
-Mobile testing on
-1080 x 1920 pixel
-*/
-
-body {
-	margin: 0;
-	padding: 0;
-	font-family: 'Lato', sans-serif;
-	background: #FAFAFA;
-	min-height: 100%;
-	padding-bottom: 0px;
-	position: relative;
+* {
+	box-sizing: border-box;
 }
 
-a{
+body {
+	font-family: 'Lato', sans-serif;
+	background: #FAFAFA;
+	margin: 0;
+}
+
+a {
 	text-decoration: none;
+}
+
+h1 {
+	margin: 0;
+	padding: 0;
 }
 
 h2 {
@@ -26,18 +26,19 @@ button:focus {
 	outline: none;
 }
 
-/*NAVIGATION*/
+/*TOP NAVIGATION*/
 
 #nav__logo {
 	background: white;
-	padding: 20px 0;
+	padding: 0;
 	border-bottom: 1px solid #E1E1E1;
-	margin: 0px;
-
+	margin: 0;
+	width: 100vw;
 }
 
+
 #nav__logo h1 {
-	font-size: 6em;
+	font-size: 3rem;
 	text-transform: uppercase;
 	font-weight: bold;
 	letter-spacing: 5px;
@@ -55,12 +56,11 @@ button:focus {
 
 .main__test__description {
 	background: #FAFAFA;
-	padding-bottom: 2em;
-	font-size: 20px;
+	padding-bottom: 1rem;
 	border-bottom: 1px solid #E1E1E1;
-	margin: 2em 0 0 2em;
+	margin: 2rem;
 
-	font-size: 3em;
+	font-size: 1rem;
 	letter-spacing: 2px;
 	line-height: 2em;
 }
@@ -69,7 +69,7 @@ button:focus {
 	border-bottom: 5px solid #d7dc1ffb;
 	font-style: italic;
 	display: inline-block;
-	margin-bottom: 16px;
+	margin-bottom: 1rem;
 }
 
 .main__test__description > p {
@@ -78,15 +78,16 @@ button:focus {
 
 #button__play {
 	color: white;
-	font-size: 1.5em;
+	font-size: 1.5rem;
+	padding: 1rem;
 	background: #007dcfff;
 	border: none;
-	padding: 0.5em;
+	
 	border-radius: 10px;
 	text-transform: uppercase;
 	border: 2px solid white;
 	cursor: pointer;
-	margin-top: 32px;
+	margin-top: 2rem;
 }
 
 
@@ -97,20 +98,17 @@ button:focus {
 }
 
 #button__next {
-	display: block;
-	width: 4em;
-	margin-top: 2em;
-	margin-left: auto;
-	margin-right: auto;
+	display:inline-block;
 	color: white;
-	font-size: 4em;
+	font-size: 1.5rem;
+	padding: 1rem;
 	background: #b2226aff;
-	padding: 0.5em;
 	border-radius: 10px;
 	text-transform: uppercase;
 	border: 2px solid white;
 	cursor: pointer;
 	z-index: 1;
+	margin-left: 30%;
 	
 }
 
@@ -118,22 +116,11 @@ button:focus {
 	background-color: white;
 	border: 2px solid #b2226aff;
 	color: #b2226aff;
+
 }
 
-
-/*Bottom navigation*/
-
-#nav__bottom {
-	padding: 20px 0px;
-	width: 100%;
-	
-}
-
-.nav__bottom--sticky {
-	position: fixed;
-	background: black;
-	bottom: 0;
-	left: 0;
+#nav__bottom{
+	margin-bottom: 2rem;
 }
 
 
@@ -143,7 +130,5 @@ button:focus {
   position: absolute; /* Remove input from document flow */
 }
 
-.check{
-	opacity: 0.5;
-}
+
 

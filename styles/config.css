@@ -1,21 +1,20 @@
+
 /*CONFIGURATION STAGE*/
-#main__config-questions {
-	padding-bottom: 200px;
-}
+/*#main__config-questions {
+
+}*/
 
 .main__config-questions__number-box {
 	display: inline-block;
 	background-color: #007dcfff;
 	color: white;
 	margin-right: 10px;
-
 	text-align: center;
-	padding: 17px 0;
 	border-radius: 5px;
 	border: 2px #007dcfff solid;
-
-	font-size: 2em;
-	width: 2em;
+	font-size: 1.5rem;
+	padding: 1rem;
+	width: 4rem;
 }
 
 .main__config-questions__number-boxes {
@@ -27,8 +26,8 @@
 }
 
 .label-check{
- background-color: white;
- color: #007dcfff;
- border: 2px #007dcfff solid;
+ 	background-color: white;
+ 	color: #007dcfff;
+ 	border: 2px #007dcfff solid;
 }
 

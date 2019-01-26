@@ -297,8 +297,6 @@ var playButton = questionDiv.querySelector("#button__play");
  } 
 
 
-
-
 // Below does not need to change
 // Select the winner object - make sure it won't be used anymore
 function setWinningLosingAnswers(){
