@@ -5,31 +5,32 @@
 }
 
 #main__start-section {
-	background-size: 100% 100%;
-	text-align: center;
+	background: url("../media/headphones.jpeg") bottom/cover no-repeat;
 	height: 60vh;
 	width: 100vw;
 	border-top: 1px solid #E1E1E1;
-	background: url("../media/headphones.jpeg") bottom/cover no-repeat;
 	position: relative;
 }
 
 #button__start {
-	position: absolute;
-	left: 30%;
-	top: 40%;
-	display: inline-block;
-	color: white;
 	font-size: 3rem;
 	padding: 0.5rem;
+	color: white;
 	background: #b2226aff;
+
 	border-radius: 5px;
 	text-transform: uppercase;
 	cursor: pointer;
+
+	left: 30%;
+	top: 40%;
+	
+	display: inline-block;
+	position: absolute;
 }
 
  #button__start:hover{
- 	background: white;
  	color: #b2226aff;
+ 	background: white;
  	border: 2px solid #b2226aff;
  }

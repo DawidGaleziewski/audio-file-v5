@@ -6,10 +6,12 @@
 }
 
 #main__test__results__table{
-	border-collapse: collapse;
 	font-size: 1rem;
 	margin-left: 2rem;
+	margin-right: 2rem;
 	border: 1px solid #E1E1E1;
+	border-collapse: collapse;
+	
 }
 
 #main__test__results > .main__test__description{
@@ -17,15 +19,14 @@
 }
 
 #main__test__results__table th{
+	font-size: 1rem;
 	padding: 1rem;
 	border-bottom: 1px solid black;
-	font-size: 1rem;
 }
 
 #main__test__results__table td {
-	
-	padding: 1rem;
 	font-size: 1rem;
+	padding: 1rem;
 	text-align: center;
 }
 
@@ -34,13 +35,12 @@
 }
 
 #main__test__results__table button {
-	color: white;
 	font-size: 1em;
-	border: none;
 	padding: 0.5rem;
-	border-radius: 5px;
 	text-transform: uppercase;
+	color: white;
 	border: 2px solid white;
+	border-radius: 5px;
 	cursor: pointer;
 }
 

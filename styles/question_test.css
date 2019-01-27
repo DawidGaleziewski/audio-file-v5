@@ -1,6 +1,9 @@
 /* TESTING STAGE*/
 #main__test__answers {
-	width: 100vw;
+	width: 80vw;
+	min-width: 12.5rem;
+	max-width: 25rem;
+	display: inline-block;
 	margin-left: 2rem;
 }
 
@@ -10,23 +13,27 @@
 	border: 5px solid #007dcfff;
 	margin-top: 1em;
 	cursor: pointer;
-	width: 50vw;
+	width: 100%;
 	filter: grayscale(70%);
 }
 
-.check{
-	filter: grayscale(0%);
-}
+
 
 #button__next {
-	display: inline-block;
-	color: white;
 	font-size: 1.5rem;
 	padding: 1rem;
-	background: #b2226aff;
-	border-radius: 10px;
 	text-transform: uppercase;
+	color: white;
+	background: #b2226aff;
 	border: 2px solid white;
-	cursor: pointer;
+	border-radius: 10px;
 	margin-top: 2rem;
+	
+	cursor: pointer;
+	display: inline-block;
+}
+
+/*JS classes*/
+.check{
+	filter: grayscale(0%);
 }

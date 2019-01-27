@@ -21,27 +21,90 @@ h2 {
 	margin: 0px;
 }
 
+
 /*remove outline on all buttons*/
 button:focus {
 	outline: none;
 }
 
+.backdrop {
+	width: 100vw;
+	height: 100vh;
+	background-color: black;
+	opacity: 0.5;
+	position: fixed;
+	z-index: 3;
+}
+
+.cookies-warning{
+	width: 80vw;
+	padding: 2rem;
+	min-width: 12.5rem;
+	max-width: 31.25rem;
+	left: 5vw;
+	bottom: 20%;
+	position: fixed;
+	background: white;
+	z-index: 4;
+	display: inline-block;
+}
+
+.button__accept {
+	font-size: 1.5rem;
+	padding: 1rem;
+	min-width: 8.75rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: white;
+	background-color: #d7dc1ffb;
+	margin-top: 1rem;
+	display: inline-block;
+	border: 2px solid  #d7dc1ffb;
+	border-radius: 6px;
+}
+
+.button__accept:hover,
+.button__accept:active
+ {
+	color:#d7dc1ffb;
+	background-color: white;
+}
+
+.button__decline {
+	font-size: 1rem;
+	padding: 0.5rem;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: white;
+	background-color: grey;
+	margin-top: 1rem;
+	margin-left: 1rem;
+	display: inline-block;
+	border: 2px solid  grey;
+	border-radius: 6px;
+}
+
+.button__decline:hover,
+.button__decline:active {
+	color:grey;
+	background-color: white;
+}
+
 /*TOP NAVIGATION*/
 
 #nav__logo {
+	width: 100vw;
 	background: white;
 	padding: 0;
 	border-bottom: 1px solid #E1E1E1;
 	margin: 0;
-	width: 100vw;
 }
-
 
 #nav__logo h1 {
 	font-size: 3rem;
-	text-transform: uppercase;
 	font-weight: bold;
 	letter-spacing: 5px;
+	text-transform: uppercase;
 	text-align: center;
 	margin: 0px;
 }
@@ -55,14 +118,13 @@ button:focus {
 }
 
 .main__test__description {
+	font-size: 1rem;
+	letter-spacing: 2px;
+	line-height: 2em;
 	background: #FAFAFA;
 	padding-bottom: 1rem;
 	border-bottom: 1px solid #E1E1E1;
 	margin: 2rem;
-
-	font-size: 1rem;
-	letter-spacing: 2px;
-	line-height: 2em;
 }
 
 .main__test__description--underline {
@@ -73,21 +135,23 @@ button:focus {
 }
 
 .main__test__description > p {
- margin: 0px;
+	font-size: 1rem;
+ 	margin: 0px;
 }
 
 #button__play {
-	color: white;
 	font-size: 1.5rem;
-	padding: 1rem;
-	background: #007dcfff;
-	border: none;
-	
-	border-radius: 10px;
 	text-transform: uppercase;
+	padding: 1rem;
+	color: white;
+	background: #007dcfff;
+
 	border: 2px solid white;
-	cursor: pointer;
+	border-radius: 10px;
+
 	margin-top: 2rem;
+	
+	cursor: pointer;
 }
 
 
@@ -98,25 +162,29 @@ button:focus {
 }
 
 #button__next {
-	display:inline-block;
-	color: white;
 	font-size: 1.5rem;
-	padding: 1rem;
-	background: #b2226aff;
-	border-radius: 10px;
 	text-transform: uppercase;
+	padding: 1rem;
+
+	color: white;
+	
+	background: #b2226aff;
+
+	border-radius: 10px;
 	border: 2px solid white;
+
+	margin-left: 30%;
+
 	cursor: pointer;
 	z-index: 1;
-	margin-left: 30%;
 	
+	display: inline-block;
 }
 
 #button__next:hover {
+	color: #b2226aff;
 	background-color: white;
 	border: 2px solid #b2226aff;
-	color: #b2226aff;
-
 }
 
 #nav__bottom{

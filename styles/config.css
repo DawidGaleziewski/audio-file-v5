@@ -4,30 +4,36 @@
 
 }*/
 
-.main__config-questions__number-box {
-	display: inline-block;
-	background-color: #007dcfff;
-	color: white;
-	margin-right: 10px;
-	text-align: center;
-	border-radius: 5px;
-	border: 2px #007dcfff solid;
-	font-size: 1.5rem;
-	padding: 1rem;
-	width: 4rem;
-}
-
 .main__config-questions__number-boxes {
 	margin-top: 32px;
 }
+
+.main__config-questions__number-box {
+	font-size: 1.5rem;
+	padding: 1rem;
+	width: 4rem;
+	color: white;
+	background-color: #007dcfff;
+
+	margin-right: 1rem;
+	margin-top: 1rem;
+
+	text-align: center;
+	border-radius: 5px;
+	border: 2px #007dcfff solid;
+	
+	display: inline-block;
+}
+
+
 
 .main__config-questions__number-box:hover {
 	cursor: pointer;
 }
 
 .label-check{
+	color: #007dcfff;
  	background-color: white;
- 	color: #007dcfff;
  	border: 2px #007dcfff solid;
 }
 
