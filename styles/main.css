@@ -34,3 +34,10 @@
  	background: white;
  	border: 2px solid #b2226aff;
  }
+
+/*starting from 640px/40 rem tablet mode*/
+@media(min-width: 40rem) and (min-width: 40rem){
+	#button__start {
+		left: 65%;
+	}
+}

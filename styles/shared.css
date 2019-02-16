@@ -198,5 +198,58 @@ button:focus {
   position: absolute; /* Remove input from document flow */
 }
 
+@media(min-width: 40rem) and (min-height: 40rem){
+	#nav__logo{
+		padding: 1rem;
+	}
+
+	#nav__logo h1 {
+		font-size: 4rem;
+	}
+
+	.main__test__description{
+		font-size: 2rem;
+		padding-bottom: 3rem;
+	}
+
+	.main__test__description > p {
+		font-size: 2rem;
+ 		margin: 0px;
+	}
+
+	.cookies-warning {
+		left: 30vw;
+		bottom: 5vw;
+		padding: 3rem;
+	}
+
+	.button__accept {
+		font-size: 2rem;
+	}
+
+	.cookies-warning__header{
+		font-size: 3rem;
+	} 
+
+	.cookies-warning__text {
+		font-size: 2rem;
+	}
+
+	#button__play {
+		font-size: 2rem;
+		padding: 1.5rem;
+	}
+
+	#button__next {
+		margin-left: 60%;
+		text-align: center;
+		padding: 1.5rem;
+		font-size: 2rem
+	}
+
+}
+
+
+
 
 

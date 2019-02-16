@@ -49,3 +49,21 @@
 	background: white;
 	border: 2px solid #007dcfff;
 }
+
+@media(min-width: 40rem) and (min-height: 40rem){
+		#main__test__results__table th{
+		font-size: 2rem;
+		padding: 2rem;
+	}
+
+	#main__test__results__table button {
+		font-size: 2em;
+		padding: 1rem;
+	}
+
+	#main__test__results__table td {
+		font-size: 2rem;
+		padding: 1rem;
+		text-align: center;
+	}
+}

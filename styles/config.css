@@ -37,3 +37,11 @@
  	border: 2px #007dcfff solid;
 }
 
+@media(min-width: 40rem) and (min-height: 40rem){
+
+	.main__config-questions__number-box{
+		font-size: 2rem;
+		width: 5rem;
+	}
+}
+
